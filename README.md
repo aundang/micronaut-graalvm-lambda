@@ -19,3 +19,24 @@ Handler: io.micronaut.function.aws.proxy.MicronautLambdaHandler
 - [Micronaut AWS Lambda Function documentation](https://micronaut-projects.github.io/micronaut-aws/latest/guide/index.html#lambda)
 
 
+## Basic Commands
+
+### Create Project
+
+```
+mn create-app example.micronaut.micronautlambda --features=aws-lambda,graalvm --
+build=gradle --lang=java
+```
+
+### Compile and build lambda package
+
+```
+./gradlew buildNativeLambda
+
+```
+
+### To Test
+```
+./gradlew test
+```
+
